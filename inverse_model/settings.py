@@ -132,7 +132,6 @@ ALLOWED_HOSTS = [
     "localhost",
     "http://127.0.0.1",
     "127.0.0.1",
-    '.vercel.app',
     
 ]
 
@@ -154,5 +153,4 @@ ALLOWED_HOSTS = [
     '0.0.0.0',
     '127.0.0.1'
     'http://localhost',
-    '.vercel.app'
 ]
