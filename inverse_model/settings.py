@@ -127,14 +127,6 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-
-ALLOWED_HOSTS = [
-    "localhost",
-    "http://127.0.0.1",
-    "127.0.0.1",
-    
-]
-
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
     "http://0.0.0.0",
@@ -153,4 +145,5 @@ ALLOWED_HOSTS = [
     '0.0.0.0',
     '127.0.0.1'
     'http://localhost',
+    "inverse-model-backend.onrender.com"
 ]
