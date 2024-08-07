@@ -25,7 +25,7 @@ def save_uploaded_color(f):
 
 @api_view(["GET"])
 def checkConnection(request):
-    return HttpResponse("Inverse Model Backend is up and running!")
+    return HttpResponse("Inverse Model Backend is up and running!!!!")
 
 
 @api_view(["POST"])
