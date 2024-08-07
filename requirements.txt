@@ -126,3 +126,4 @@ wget==3.2
 wrapt==1.14.1
 xyzservices==2024.4.0
 yt-dlp==2023.3.4
+django-cors-headers==4.4.0
