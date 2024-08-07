@@ -131,14 +131,14 @@ CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
     "http://0.0.0.0",
     "http://127.0.0.1",
-    '.vercel.app',
+    'https://inverse-model.vercel.app'
 ]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://0.0.0.0",
     "http://localhost"
-    '.vercel.app',
+    'https://inverse-model.vercel.app',
 ]
 
 ALLOWED_HOSTS = [
