@@ -87,28 +87,26 @@ def graph(request):
     sampY = samp[:, 1].tolist()
     sampZ = samp[:, 2].tolist()
 
-    try:
-        color_file = files["color"].file
-        save_uploaded_color(color_file)
-        color = np.load("models/static/color.npy")
-        return JsonResponse({
-            "x": sampX,
-            "y": sampY,
-            "z": sampZ,
-            "hasColor": True,
-            "color": color.tolist()
-        })
-    except:
-        pass
-
-
     return JsonResponse({
         "x": sampX,
         "y": sampY,
         "z": sampZ,
-        "hasColor": False,
     })
     
+@api_view(["POST"])
+def get_color(request):
+
+    print("Received Color Request")
+
+    files = request.FILES
+
+    color_file = files["color"].file
+    save_uploaded_color(color_file)
+    color = np.load("models/static/color.npy")
+    return JsonResponse({
+        "color": color.tolist()
+    })
+
 
 
 
